@@ -1,0 +1,85 @@
+[debug] [2019-09-16T19:50:09.631Z] ----------------------------------------------------------------------
+[debug] [2019-09-16T19:50:09.641Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\RED MOON\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2019-09-16T19:50:09.641Z] CLI Version:   6.1.1
+[debug] [2019-09-16T19:50:09.643Z] Platform:      win32
+[debug] [2019-09-16T19:50:09.646Z] Node Version:  v12.3.1
+[debug] [2019-09-16T19:50:09.651Z] Time:          Tue Sep 17 2019 01:20:09 GMT+0530 (India Standard Time)
+[debug] [2019-09-16T19:50:09.651Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-16T19:50:09.678Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-16T19:50:09.681Z] > authorizing via signed-in user
+[debug] [2019-09-16T19:50:09.681Z] [iam] checking project lifestyle-cbba8 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-09-16T19:50:09.688Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/lifestyle-cbba8:testIamPermissions  
+
+[debug] [2019-09-16T19:50:12.158Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-16T19:50:12.174Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/lifestyle-cbba8  
+ 
+[debug] [2019-09-16T19:50:12.844Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'lifestyle-cbba8'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-09-16T19:50:12.860Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/lifestyle-cbba8/versions  
+
+[debug] [2019-09-16T19:50:17.665Z] <<< HTTP RESPONSE 200
+[info] i  hosting[lifestyle-cbba8]: beginning deploy...
+[info] i  hosting[lifestyle-cbba8]: found 265 files in public
+[debug] [2019-09-16T19:50:17.930Z] [hosting] hash cache [cHVibGlj] not populated
+[info] i  hosting: hashing files [264/265] (99%)
+[debug] [2019-09-16T19:50:20.958Z] [hosting] hash cache [cHVibGlj] stored for 265 files
+[debug] [2019-09-16T19:50:20.958Z] [hosting][hash queue][FINAL]
+[debug] [2019-09-16T19:50:20.958Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/lifestyle-cbba8/versions/6e8f586ab3a889e5:populateFiles  
+ <request body omitted>
+[info] i  hosting: adding files to version [0/265] (0%)
+[info] i  hosting: adding files to version [0/265] (0%)
+[info] i  hosting: adding files to version [0/265] (0%)
+[info] i  hosting: adding files to version [0/265] (0%)
+[debug] [2019-09-16T19:50:28.181Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-16T19:50:28.465Z] [hosting][populate queue][FINAL]
+[debug] [2019-09-16T19:50:28.511Z] [hosting] uploads queued: 252
+[info] i  hosting: uploading new files [0/252] (0%)
+[debug] [2019-09-16T19:50:32.315Z] [hosting][upload]
+[info] i  hosting: uploading new files [2/252] (0%)
+[info] i  hosting: uploading new files [74/252] (29%)
+[info] i  hosting: uploading new files [201/252] (79%)
+[info] i  hosting: uploading new files [248/252] (98%)
+[info] i  hosting: uploading new files [251/252] (99%)
+[info] i  hosting: uploading new files [251/252] (99%)
+[info] i  hosting: uploading new files [251/252] (99%)
+[info] i  hosting: uploading new files [251/252] (99%)
+[info] i  hosting: uploading new files [251/252] (99%)
+[debug] [2019-09-16T19:50:48.637Z] [hosting][upload queue][FINAL]
+[info] +  hosting[lifestyle-cbba8]: file upload complete
+[debug] [2019-09-16T19:50:48.645Z] [hosting] deploy completed after 30980ms
+[debug] [2019-09-16T19:50:49.027Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "lifestyle-cbba8"
+    },
+    "site": "lifestyle-cbba8",
+    "version": "sites/lifestyle-cbba8/versions/6e8f586ab3a889e5"
+  }
+]
+[info] i  hosting[lifestyle-cbba8]: finalizing version...
+[debug] [2019-09-16T19:50:49.037Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/lifestyle-cbba8/versions/6e8f586ab3a889e5?updateMask=status  
+
+[debug] [2019-09-16T19:50:51.195Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-16T19:50:51.195Z] [hosting] finalized version for lifestyle-cbba8:
+[info] +  hosting[lifestyle-cbba8]: version finalized
+[info] i  hosting[lifestyle-cbba8]: releasing new version...
+[debug] [2019-09-16T19:50:51.210Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/lifestyle-cbba8/releases?version_name=sites/lifestyle-cbba8/versions/6e8f586ab3a889e5  
+
+[debug] [2019-09-16T19:50:53.430Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-16T19:50:53.430Z] [hosting] release:
+[info] +  hosting[lifestyle-cbba8]: release complete
+[info] 
+[info] +  Deploy complete!
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/lifestyle-cbba8/overview
+[info] Hosting URL: https://lifestyle-cbba8.firebaseapp.com
